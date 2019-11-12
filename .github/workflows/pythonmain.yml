@@ -21,5 +21,6 @@ jobs:
         python -m pip install --upgrade pip
     - name: Test with pytest
       run: |
+        cd example-py-unittest
         pip install pytest
-        python -m doctest com/automationpanda/example/calc_func.py
+        python -m unittest com.automationpanda.tests.test_calc
